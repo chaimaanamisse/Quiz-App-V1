@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/questions.css" />
+    <title>Quiz v1</title>
+ 
+      </script>
+  </head>
+  <body>
+
+    <div class="modal_outer"></div>
+
+    <div id="style-1" class="box">
+      <div class="close">&#x2716;</div>
+      <div class="question--form">
+        <label for="question-text">Enter your question:</label>
+        <textarea id="question-text" class="question-text" rows="3" cols="3"></textarea>
+ 
+        <label for="question-level">Levels : </label>
+          <select id="question-level">
+            <option value="">select one</option>
+          </select>
+       <br>
+
+       <div class="score">
+          </div>
+        <label for="subjects-options">Subjects : </label>
+          <select id="subjects-options">
+           
+          </select>
+       
+          <br>
+        <div class="add--answers">
+          <label for="answer-op" >Answer options </label> 
+          <img id="add-ans-option" src="./public/icons/add-ans.svg" alt="add answer">   
+        </div>
+        
+        <input  class="answer-op" type="text" placeholder="Answer options">
+        <div id="answers__dropzone1" class="add--answers__option">
+          
+          
+        </div>
+
+        <!-- <input class="answer-cr" type="text" placeholder="correct answer"> -->
+
+        <!-- <label>Corecct Answer</label>  -->
+
+        <label style="margin-top: 20px;" for="add--answers__option">Corecct Answers</label> 
+        <div id="answers__dropzone2" class="add--answers__option">
+       <!-- here correct answers tag -->
+
+        </div>
+       
+     
+      <input id="save--question" type="button" value="save" class="btn">
+      </div>
+    </div>
+
+    <div class="box-view">
+      <div class="close">&#x2716;</div>
+
+    </div>
+
+
+    <nav>
+      <h1>All questions</h1>
+      <a id="add--question">Add a new question</a>
+    </nav>
+
+
+
+    <div class="questions">
+      <!-- inject blogs here from js -->
+      <div class="icon ico--more">
+
+      </div>
+    </div>
+
+      <script type="module" src="/js/questions.js" defer></script>
+  </body>
+</html>
